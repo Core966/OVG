@@ -12,7 +12,7 @@
 	<div class="l-box">
 	<div id="home-page-header" class="pure-u-1">
         <header>
-          <logo><h1><a href="/home"><%= @title %></a></h1></logo>
+          <logo><a href="/home"><img src="images/OVG_logo_background.jpg" /></a></logo>
         </header>
 	</div>
 	</div>
@@ -22,12 +22,12 @@
         <%= yield %>
         </div>
         </div>
-	<div class="l-box">
-        <div id="footer">
-          <p><div id="legal"><%= "&mdash; &copy; #{Time.now.strftime('%Y')} #{@author} &mdash;" %></div></p>
-        </div>
-	</div>
     </container>
+    <div class="l-box">
+       <div id="footer">
+         <p><div id="legal"><%= "&mdash; &copy; #{Time.now.strftime('%Y')} #{@author} &mdash;" %></div></p>
+       </div>
+    </div>
   </div>
   </div>
   </div>

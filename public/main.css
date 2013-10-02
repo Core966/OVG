@@ -4,11 +4,12 @@ body {
   background: #FFF;
   color: #1B1B1B;
   font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-image: url('images/background.jpg')
 }
 
-#wrapper { width: 800px; padding: 0 auto; margin: 0 auto}
+#wrapper { width: 800px; padding-right:2.8em; margin: 0 auto; background-color:white;}
 
-#container {
+container {
   margin: 0 auto;
   width: 800px;
 }
@@ -16,11 +17,9 @@ body {
   margin: 0;
   text-align: center;
 }
-#content {
-  padding: 0;
-  margin: 0;
-}
+
 #footer {
+  width:800px;
   padding: 0;
   margin: 0;
   font-size: 0.7em;
@@ -55,3 +54,5 @@ li {
 #main-menu { padding-bottom:0em; }
 
 #home-page-header { padding-left:0em; }
+
+logo { width:800px; height:120px; }

@@ -10,8 +10,8 @@ class Game
   
   belongs_to :user
   
-  def released_on=date
-    super Date.strptime(date, '%m/%d/%Y') #Converts the string entered in the form to be formatted to a date
-  end
+#  def released_on=date
+#    super Date.strptime(date, '%m/%d/%Y') #Converts the string entered in the form to be formatted to a date
+#  end
 end
 
