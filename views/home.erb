@@ -1,0 +1,25 @@
+
+<div id="main-left-side" class="pure-u-1-2">
+<div class="l-box">
+<% if @games.any? %>
+  <% @games.each do |game| %>
+  <div class="l-box">
+    <a href="<%= "/#{game.id}" %>"> <%= "#{game.title}" %></a><p><%= "#{game.released_on}" %></p>
+    <br />  
+    <p><%= "#{game.description}" %></p>
+  </div>
+  <% end %>
+<% else %>
+  <p>No games in the database yet!</p>
+<% end %>
+</div>
+</div>
+
+<div id="main-right-side" class="pure-u-1-4">
+<div class="l-box">
+<h4>Latest updated</h4>
+<p>Lorem ipsum sed aluqam.</p>
+<p>Lorem ipsum sed aluqam.</p>
+</div>
+</div>
+
