@@ -14,9 +14,14 @@ In order to initialize the application:
 
   bundle install
   rake db:migrate (The commenting out of the following lines might be necessary:
-	if Note.count == 0
-	      @note = Note.create(creator: "John Doe", name: "Default note", content: "Lorem ipsum sed aliquam.", created_at: Time.now, updated_at: Time.now)
-	      @note.save
+	if User.count == 0
+	      @user = User.create(first_name: nil, last_name: nil, username: "admin", password: "admin", email: nil)
+	      @user.save
+	end
+
+	if Game.count == 0
+	      @game = Game.create(title: "Default title", description: "Lorem ipsum sed aliquam.", image_link: nil, released_on: Time.now, submitted_on: Time.now)
+	      @game.save
 	end
   following that the lines can be uncommented and rake db:upgrade must be run.
 )
