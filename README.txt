@@ -2,13 +2,13 @@
 
 Just a test site to keep my programming skills intact.
 
-This application is built on the template (c) by Nick Plante in 2011. Which is distributed under the MIT license also included.
+This application is built on the template (c) by Nick Plante in 2011. Which is distributed under the MIT license also included, although currently only portions of the original code are left intact, in the sublicensing to come, this will be also mentioned.
 
 Reworked the template in a modular style (which is still in progress in making).
 
 Testing will be left intact, although not used in this project.
 
-Haml templates will be changed to erb for better readability.
+Haml templates are changed to erb for better readability.
 
 In order to initialize the application:
 
@@ -29,8 +29,9 @@ In order to initialize the application:
 Finally, to run the app locally:
   rackup ( and also adding "-p $PORT -o $IP" in case of C9.io)
 
-Special thanks to the following contributors of the sinatra template and to Nick Plante:
+Special thanks to the following contributors of the sinatra app template including Nick Plante:
 
+  * zapnap (Nick Plante)
   * garrensmith
   * bryanwoods
   * flexd
