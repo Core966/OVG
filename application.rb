@@ -43,4 +43,13 @@ class WebApplicationCoreRoutes < DataModel
 	  erb :home
 	end
 
+	get '/games/?' do
+	  @games = Game.all
+	  erb :games
+	end
+
+	get '/about/?' do
+	  erb :about
+	end
+
 end
