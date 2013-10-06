@@ -5,7 +5,7 @@
 <% if @games.any? %>
   <div class="l-box">
 
-  <% @games[0..1].each do |game| %>
+  <% @games[0..2].each do |game| %>
     <a href="<%= "/games/#{game.id}" %>"> <%= "#{game.title}" %></a><p><%= "#{game.released_on}" %></p>
     <br />  
     <p><%= "#{game.description}" %></p>

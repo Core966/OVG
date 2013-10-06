@@ -40,6 +40,7 @@ class WebApplicationCoreRoutes < DataModel
 
 	get '/home/?' do
 	  @games = Game.all
+	  @games = @games.sort.reverse
 	  erb :home
 	end
 
