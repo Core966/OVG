@@ -7,4 +7,5 @@ require File.join(File.dirname(__FILE__), 'application.rb')
 #$stdout.reopen(log)
 #$stderr.reopen(log)
 
+map('/games') { run GamesRoutes }
 map('/') { run WebApplicationCoreRoutes }

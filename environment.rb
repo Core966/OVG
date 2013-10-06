@@ -26,8 +26,12 @@ if User.count == 0
 end
 
 if Game.count == 0
-      @game = Game.create(title: "Default title", description: "Lorem ipsum sed aliquam.", image_link: nil, released_on: Time.now, submitted_on: Time.now)
+      @game = Game.create(title: "Default title", description: "Lorem ipsum sed aliquam.", image_link: nil, submitted_on: Time.now)
       @game.save
 end
+
+  #Load Helpers
+  $LOAD_PATH.unshift("#{File.dirname(__FILE__)}/helpers")
+  Dir.glob("#{File.dirname(__FILE__)}/helpers/*.rb") { |helpers| require File.basename(helpers, '.*') }
 
 end

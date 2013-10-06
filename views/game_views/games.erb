@@ -1,0 +1,16 @@
+<a href="/games/new">Add a new game</a>
+<div class="l-box">
+<% if @games.any? %>
+  <div class="l-box">
+  <ul>
+  <% @games.each do |game| %>
+
+    <li><a href="<%= "/games/#{game.id}" %>"> <%= "#{game.title}" %></a></li>
+
+  <% end %>
+  </ul>
+  </div>
+<% else %>
+  <p>No games in the database yet!</p>
+<% end %>
+</div>
