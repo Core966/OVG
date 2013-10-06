@@ -56,3 +56,5 @@ li {
 #home-page-header { padding-left:0em; }
 
 logo { width:800px; height:120px; }
+
+legend { border-bottom: 1px solid rgb(229, 229, 229); }

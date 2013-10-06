@@ -31,7 +31,7 @@ enable :method_override
     
     put '/:id' do
       game = find_game
-      game.update(params[:game])
+      game.update(:title => params[:title], :description => params[:description], :released_on => params[:released_on])
       redirect to("/#{game.id}")
     end
     

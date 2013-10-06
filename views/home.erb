@@ -4,11 +4,20 @@
   <p>Latest games:</p>
 <% if @games.any? %>
   <div class="l-box">
-
-  <% @games[0..2].each do |game| %>
+  <% i = 0 %>
+  <% @games[0..100].each do |game| %>
+  <% if not(game.title.nil?) %>
+  <legend>
     <a href="<%= "/games/#{game.id}" %>"> <%= "#{game.title}" %></a><p><%= "#{game.released_on}" %></p>
-    <br />  
-    <p><%= "#{game.description}" %></p>
+    <p><%= "#{game.description}" %></p> 
+    
+  </legend>
+  <br />
+  <% i = i + 1 %>
+  <% end %>
+  <% if i >= 3 %>
+  <% break %>
+  <% end %>  
   <% end %>  
   </div>
 <% else %>

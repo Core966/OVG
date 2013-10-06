@@ -6,6 +6,6 @@
         Game.get(params[:id].to_i)
       end
       def create_game
-        @game = Game.create(params[:game])
+        @game = Game.create(:title => params[:title], :description => params[:description], :released_on => params[:released_on], :submitted_on => Time.now)
       end
     end

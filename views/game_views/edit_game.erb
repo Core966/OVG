@@ -1,5 +1,8 @@
+<div class="l-box">
 <h1>Edit Game</h1>
 <form method="POST" action="/games/<%="#{@game.id}"%>">
   <input type="hidden" name="_method" value="PUT">
   <%= erb "game_views/game_form".to_sym %>
 </form>
+<p><a href="/games">back to games index</a></p>
+</div>
