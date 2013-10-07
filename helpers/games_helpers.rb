@@ -1,6 +1,6 @@
     module GameHelpers
       def find_games
-        @games = Game.all
+        @games = Game.all(:order => [ :title.asc ])
       end
       def find_game
         Game.get(params[:id].to_i)
