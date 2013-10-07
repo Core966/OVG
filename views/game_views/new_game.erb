@@ -1,7 +1,9 @@
 <div class="l-box">
 <h1>Add A New Game</h1>
-<form method="POST" action="/games">
+<form class="pure-form pure-form-stacked" method="POST" action="/games">
+<fieldset>
   <%= erb "game_views/game_form".to_sym %>
+</fieldset>
 </form>
 <p><a href="/games">back to games index</a></p>
 </div>

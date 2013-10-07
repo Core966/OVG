@@ -1,10 +1,10 @@
 <label for="title"> Title:
 <input id="title" type="text" name="title" value="<%="#{@game.title}"%>">
-</label>
+</label><br />
 <label for="released_on"> Date(mm/dd/yyyy):
 <input id="released_on" type="text" name="released_on" value="<%="#{@game.released_on.strftime("%m/%d/%Y") if @game.released_on}"%>">
-</label>
+</label><br />
 <label for="description"> Description:
 <textarea id="description" name="description"><%= "#{@game.description}" %></textarea>
-</label>
-<input type="submit" value="Save Game">
+</label><br />
+<input class="pure-button" type="submit" value="Save Game">
