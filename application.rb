@@ -16,6 +16,10 @@ before do
   @author = "Tibor Szalay"
 end
 
+def current?(path='/') #This will return the path of the page that’s currently being visited, relative to the root URL
+  (request.path==path || request.path==path+'/') ? "pure-menu-selected" : nil
+end
+
 #error do
 #  e = request.env['sinatra.error']
 #  Kernel.puts e.backtrace.join("\n")
