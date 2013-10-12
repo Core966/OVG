@@ -8,4 +8,7 @@
       def create_game
         @game = Game.create(:title => params[:title], :description => params[:description], :released_on => params[:released_on], :submitted_on => Time.now)
       end
+      def update_game
+	Game.get(params[:id].to_i).update(:title => params[:title], :description => params[:description], :released_on => params[:released_on])
+      end
     end
