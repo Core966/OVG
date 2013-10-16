@@ -9,6 +9,7 @@ gem 'dm-timestamps'
 gem 'dm-validations'
 gem 'dm-aggregates'
 gem 'dm-migrations'
+gem 'dm-ar-finders'
 gem 'thin'
 gem 'bcrypt-ruby'
 

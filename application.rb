@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'sinatra/base'
 require 'data_mapper'
 require 'bcrypt'
+require 'dm-ar-finders'
 
 
 class WebApplicationSettings < Sinatra::Base

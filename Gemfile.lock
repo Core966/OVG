@@ -19,6 +19,8 @@ GEM
     diff-lcs (1.2.4)
     dm-aggregates (1.2.0)
       dm-core (~> 1.2.0)
+    dm-ar-finders (1.2.0)
+      dm-core (~> 1.2.0)
     dm-constraints (1.2.0)
       dm-core (~> 1.2.0)
     dm-core (1.2.0)
@@ -96,6 +98,7 @@ DEPENDENCIES
   bcrypt-ruby
   data_mapper
   dm-aggregates
+  dm-ar-finders
   dm-core
   dm-migrations
   dm-mysql-adapter
