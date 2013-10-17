@@ -47,9 +47,9 @@ li {
 
 .l-box { padding: 1.3em; }
 
-#main-left-side { float:left; }
+#main-left-side { }
 
-#main-right-side { float:right; background: none repeat scroll 0% 0% rgb(250, 250, 250); }
+#main-right-side { background: none repeat scroll 0% 0% rgb(250, 250, 250); margin:2.7em; }
 
 #main-menu { padding-bottom:0em; }
 

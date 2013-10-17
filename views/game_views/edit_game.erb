@@ -1,10 +1,12 @@
 <div class="l-box">
 <h1>Edit Game</h1>
-<form class="pure-form pure-form-stacked" method="POST" action="/games/<%="#{@game.id}"%>">
+<% @game.map do |game| %>
+<form class="pure-form pure-form-stacked" method="POST" action="/games/<%="#{game.id}"%>">
 <fieldset>
   <input type="hidden" name="_method" value="PUT">
   <%= erb "game_views/game_form".to_sym %>
 </fieldset>
 </form>
+<% end %>
 <p><a href="/games">back to games index</a></p>
 </div>

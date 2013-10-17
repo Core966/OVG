@@ -1,10 +1,25 @@
+<% unless params[:id].nil? %>
+<% @game.map do |game| %>
 <label for="title"> Title:
-<input id="title" type="text" name="title" value="<%="#{@game.title}"%>">
+<input id="title" type="text" name="title" value="<%="#{game.title}"%>">
 </label><br />
 <label for="released_on"> Date(mm/dd/yyyy):
-<input id="released_on" type="text" name="released_on" value="<%="#{@game.released_on.strftime("%m/%d/%Y") if @game.released_on}"%>">
+<input id="released_on" type="text" name="released_on" value="<%="#{game.released_on.strftime("%m/%d/%Y") if game.released_on}"%>">
 </label><br />
 <label for="description"> Description:
-<textarea id="description" name="description"><%= "#{@game.description}" %></textarea>
+<textarea id="description" name="description"><%= "#{game.description}" %></textarea>
 </label><br />
 <input class="pure-button" type="submit" value="Save Game">
+<% end %>
+<% else %>
+<label for="title"> Title:
+<input id="title" type="text" name="title">
+</label><br />
+<label for="released_on"> Date(mm/dd/yyyy):
+<input id="released_on" type="text" name="released_on">
+</label><br />
+<label for="description"> Description:
+<textarea id="description" name="description"></textarea>
+</label><br />
+<input class="pure-button" type="submit" value="Save Game">
+<% end %>
